@@ -36,7 +36,7 @@ RKE2 will generate the `config.toml` for containerd in `/var/lib/rancher/rke2/ag
 
 For advanced customization of this file you can create another file called `config.toml.tmpl` in the same directory and it will be used instead.
 
-The `config.toml.tmpl` will be treated as a Go template file, and the `config.Node` structure is being passed to the template. See [this template](https://github.com/k3s-io/k3s/blob/master/pkg/agent/templates/templates_linux.go#L10-L104) for an example of how to use the structure to customize the configuration file.
+The `config.toml.tmpl` will be treated as a Go template file, and the `config.Node` structure is being passed to the template. See [this template](https://github.com/k3s-io/k3s/blob/v1.33.1%2Bk3s1/pkg/agent/templates/templates.go#L159-L275) for an example of how to use the structure to customize the configuration file. You should use the template from the tag that matches your version.
 
 ### Base template
 
